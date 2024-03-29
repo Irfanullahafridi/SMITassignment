@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <style>
+            .navbar{
+            background-color:rgb(3, 3, 3);
+            border-radius: 18px;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 16px 27px;
+        }
+        .navbar ul{ 
+         overflow: auto;
+        }
+        .navbar li a{
+            padding: 3px 5px;
+            text-decoration: none;
+            color: white;
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 16px 60px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 3px 12px;
+            width: 170px;
+        }
+        .navbar li a:hover{
+            color: blue;
+        }
+        </style>
 </head>
 <body>
-    <a href="./contact/contact.html">Contact</a>
-    <a href="./Gallerry/Gallery.html">Gallery</a>
-    <a href="./form/form.html">Form</a>
-    <h1>Home Page</h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Gallerry/Gallery.html">Gallery</a></li>
+                <li><a href="./form/form.html">Form</a></li>
+                <li><a href="./contact/contact.html">Contact</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="searching area">
+                </div>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
